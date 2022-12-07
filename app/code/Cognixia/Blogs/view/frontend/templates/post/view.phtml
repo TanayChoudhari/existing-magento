@@ -1,0 +1,9 @@
+<?php
+/** @var \Cognixia\Blogs\Block\Template $block */
+$blogPost = $this->getBlogPost();
+?>
+
+<div class="template">
+    <h2><?= $blogPost->getName(); ?></h2>
+    <p><?= $blogPost->getShortDescription(); ?></p>
+</div>

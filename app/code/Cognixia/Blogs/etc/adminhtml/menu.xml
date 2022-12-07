@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Cognixia_Blogs::blog_post" title="Blog Post" module="Cognixia_Blogs" sortOrder="500"
+            action="blogs/post/index" resource="Cognixia_Blogs::blogs" parent="Magento_Backend::content_elements" />
+    </menu>
+</config>

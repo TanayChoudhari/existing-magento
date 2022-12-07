@@ -1,6 +1,6 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669208002;s:6:"expire";i:1669211602;s:4:"tags";s:33:"69d_BLOCK_HTML,69d_CAT_C,69d_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669952597;s:6:"expire";i:1669956197;s:4:"tags";s:45:"69d_BLOCK_HTML,69d_CAT_C,69d_CAT_C_3,69d_MAGE";}
 
 <nav class="navigation" data-action="navigation">
     <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
-                    </ul>
+        <li  class="level0 nav-1 category-item first last level-top"><a href="https://exist.magento.local/test-cat.html"  class="level-top" ><span>Test Cat</span></a></li>        <li><a href="https://exist.magento.local/blogs/post/" id="id7Czl2yLW" >Blog</a></li>    </ul>
 </nav>

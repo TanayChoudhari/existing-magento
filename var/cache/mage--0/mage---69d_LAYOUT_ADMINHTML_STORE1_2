@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669208024;s:6:"expire";i:1700744024;s:4:"tags";s:37:"69d_LAYOUT_GENERAL_CACHE_TAG,69d_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669910275;s:6:"expire";i:1701446275;s:4:"tags";s:37:"69d_LAYOUT_GENERAL_CACHE_TAG,69d_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="adminhtml_dashboard_index"><body>
    <referenceContainer name="content">
@@ -8079,7 +8079,17 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669208024;s:6:"expire";i:1700744024;s:4:"t
    </block>
    <block class="Magento\Catalog\Block\Adminhtml\Product\Composite\Configure" template="Magento_Catalog::catalog/product/composite/configure.phtml" name="configure.popup"/>
 </container>
-</layout><handle id="adminhtml_system_config_edit"><head>
+</layout><handle id="blogs_post_edit"><body>
+   <referenceContainer name="content">
+      <uiComponent name="blogs_post_form"/>
+   </referenceContainer>
+</body>
+</handle><handle id="blogs_post_index"><body>
+   <referenceContainer name="content">
+      <uiComponent name="blogs_post_grid"/>
+   </referenceContainer>
+</body>
+</handle><handle id="adminhtml_system_config_edit"><head>
    <css src="PayPal_Braintree::styles.css"/>
    <script src="PayPal_Braintree::js/system.js"/>
    <script src="PayPal_Braintree::js/paypalStylingPreview.js"/>

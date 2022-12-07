@@ -1,0 +1,11 @@
+<?php
+/** @var \Cognixia\Blogs\Block\Template $block */
+$blogs = $this->getPostList();
+?>
+
+<div class="template">
+    <?php foreach ($blogs as $blog) : ?>
+        <h2><?= $blog->getName() ?></h2>
+        <p><?= $blog->getShortDescription() ?></p>
+    <?php endforeach; ?>
+</div>

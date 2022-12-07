@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="replace_original_breadcrumbs" type="Cognixia\ChangeBreadcumbs\Plugins\Block\Html\Breadcrumb"/>
+    </type>
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="replace_original_price" type="Cognixia\ChangeBreadcumbs\Plugins\Block\Html\Product"/>
+    </type>
+
+</config>

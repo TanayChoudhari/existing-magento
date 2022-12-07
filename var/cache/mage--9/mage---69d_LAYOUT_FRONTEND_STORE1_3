@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669208001;s:6:"expire";i:1700744001;s:4:"tags";s:37:"69d_LAYOUT_GENERAL_CACHE_TAG,69d_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669952596;s:6:"expire";i:1701488596;s:4:"tags";s:37:"69d_LAYOUT_GENERAL_CACHE_TAG,69d_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6917,6 +6917,35 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1669208001;s:6:"expire";i:1700744001;s:4:"t
 </handle><handle id="wishlist_shared_index" layout="1column"><body>
    <referenceContainer name="content">
       <block class="Magento\Wishlist\Block\Share\Wishlist" name="customer.wishlist" template="Magento_Wishlist::shared.phtml" cacheable="false"/>
+   </referenceContainer>
+</body>
+</handle><handle id="blogs_post_index" layout="1column"><body>
+   <referenceContainer name="content">
+      <block class="Cognixia\Blogs\Block\Post\ListPost" name="cognixia.blogs.postlist" template="Cognixia_Blogs::post/list.phtml"/>
+   </referenceContainer>
+</body>
+</handle><handle id="blogs_post_view" layout="1column"><head>
+   <title>Blog Post</title>
+</head>
+<body>
+   <referenceContainer name="content">
+      <block class="Cognixia\Blogs\Block\Post\View" name="cognixia.blogs.postview" template="Cognixia_Blogs::post/view.phtml"/>
+   </referenceContainer>
+</body>
+</handle><handle id="default" layout="1column"><body>
+   <referenceContainer name="catalog.topnav">
+      <block class="Magento\Framework\View\Element\Html\Link" name="blog-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Blog</argument>
+            <argument name="path" translate="true" xsi:type="string">blogs/post</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+</body>
+</handle><handle id="customer_account_login" layout="1column"><body>
+   <referenceContainer name="customer.login.container">
+      <block name="disable_customer_notification" ifconfig="customer/create_account/disable_customer_registration" template="Cognixia_CustomerDisableRegistration::index.phtml">
+            </block>
    </referenceContainer>
 </body>
 </handle><handle id="braintree_googlepay_review" layout="1column"><head>
